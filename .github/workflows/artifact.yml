@@ -22,6 +22,7 @@ jobs:
     needs: build
     runs-on: ubuntu-lastest
     steps:
+    - name : download txt file
       uses: actions/download-artifact@v4
       with:
         name: hello-artifcat
